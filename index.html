@@ -1,0 +1,1850 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CDN V4</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" rel="stylesheet" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/all.css">
+</head>
+
+<body>
+    <!-- js bootstrap -->
+    <section class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="accordion-govco" id="accordionEjemplos">
+                    <div class="item-accordion-govco">
+                        <h2 class="accordion-header" id="accordionPanels-acordeon">
+                            <button class="button-accordion-govco" type="button" data-bs-toggle="collapse" data-bs-target="#accordionPanels-collapseacordeon" aria-expanded="true" aria-controls="accordionPanels-collapseOne" onclick="setCode('#codeAcordeon','#accordionExampleOne')">
+                          <span class="text-button-accordion-govco">Acordeon</span>
+                        </button>
+                        </h2>
+                        <div id="accordionPanels-collapseacordeon" class="collapse accordion-collapse code-toolbar" data-bs-parent="#accordionExampleOne">
+                            <div class="body-accordion-govco">
+                                <div class="accordion-govco" id="accordionExampleOne">
+                                    <div class="item-accordion-govco">
+                                        <h2 class="accordion-header" id="accordionPanels-exampleOne">
+                                            <button class="button-accordion-govco" type="button" data-bs-toggle="collapse" data-bs-target="#accordionPanels-collapseOne" aria-expanded="true" aria-controls="accordionPanels-collapseOne">
+                                          <span class="text-button-accordion-govco">Reunir documentación</span>
+                                        </button>
+                                        </h2>
+                                        <div id="accordionPanels-collapseOne" aria-labelledby="accordionPanels-exampleOne" data-bs-parent="#accordionExampleOne" class="collapse">
+                                            <div class="body-accordion-govco">
+                                                <span class="title-one-accordion-govco">Documento</span>
+                                                <span class="title-two-accordion-govco">Cédula de ciudadanía: 1 original(es) en formato válido.</span>
+                                                <p class="text-one-accordion-govco">En caso de no tener cédula en formato válido podrá presentar: Contraseña de la cédula de ciudadanía de primera vez vigente con foto y huella y la copia del registro civil de nacimiento.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <pre>
+                                    <code id="codeAcordeon">
+                                        
+                                    </code>
+                                </pre>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item-accordion-govco">
+                        <h2 class="accordion-header" id="accordionPanels-modal">
+                            <button class="button-accordion-govco" type="button" data-bs-toggle="collapse" data-bs-target="#accordionPanels-collapsemodal" aria-expanded="true" aria-controls="accordionPanels-collapseOne" onclick="setCode('#codeModal','#modal_basico')">
+                          <span class="text-button-accordion-govco">Alerta Modal</span>
+                        </button>
+                        </h2>
+                        <div id="accordionPanels-collapsemodal" class="collapse accordion-collapse code-toolbar" data-bs-parent="#accordionExampleOne">
+                            <div class="container-modal-govco" id="modal_basico">
+                                <div class="modal-container-govco" id="exampleModalBasic" tabindex="-1" data-bs-backdrop="false" data-bs-keyboard="false" aria-labelledby="exampleModalBasic" aria-hidden="true" aria-hidden="true" role="dialog">
+                                    <div class="modal-dialog modal-dialog-govco">
+                                        <div class="modal-content modal-content-govco">
+                                            <div class="modal-header modal-header-govco">
+                                                <a href="javascript:void(0)" role="button" data-bs-dismiss="modal" class="close-btn-modal" aria-label="Close" aria-expanded="false" onclick="closeModal('modal_basico')">
+                                                    <span class="modal-close-govco govco-times"></span>
+                                                </a>
+                                            </div>
+                                            <div class="modal-body modal-body-govco">
+                                                <h3 class="modal-title-govco">Título</h3>
+                                                <h3 class="modal-subtitle-govco">Subtítulo</h3>
+                                                <p class="modal-text-govco">
+                                                    Texto texto Texto texto Texto texto Texto texto Texto texto Texto texto Texto texto Texto texto Texto texto Texto texto Texto texto Texto texto Texto texto Texto texto Texto texto
+                                                </p>
+                                            </div>
+                                            <div class="modal-footer-govco">
+                                                <div class="modal-buttons-govco">
+                                                    <button type="button" class="btn btn-primary btn-modal-govco">Botón</button>
+                                                    <button type="button" class="btn btn-primary btn-modal-govco btn-contorno">Botón</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <pre>
+                                <code id="codeModal">
+                                    
+                                </code>
+                            </pre>
+                        </div>
+                    </div>
+                    <div class="item-accordion-govco">
+                        <h2 class="accordion-header" id="accordionPanels-modal">
+                            <button class="button-accordion-govco" type="button" data-bs-toggle="collapse" data-bs-target="#accordionPanels-collapsealerta" aria-expanded="true" aria-controls="accordionPanels-collapseOne" onclick="setCode('#codeAlerta','#informativetoast')">
+                          <span class="text-button-accordion-govco">Alerta Notificacion</span>
+                        </button>
+                        </h2>
+                        <div id="accordionPanels-collapsealerta" class="collapse accordion-collapse code-toolbar" data-bs-parent="#accordionExampleOne">
+                            <div class="toast toast-govco show" id="informativetoast" data-autohide="false" role="alert" aria-live="assertive" aria-atomic="true">
+                                <div class="toast-header toast-header-govco">
+                                    <span class="toast-icon-govco alerta-icon-notificacion-govco anotificacion"></span>
+                                    <strong class="me-auto toast-title-govco">Título notificación</strong>
+                                    <small class="toast-small-mb-govco">x seg</small>
+                                    <small class="toast-small-govco">Hace x segundos</small>
+                                    <a href="javascript:void(0)" role="button" data-bs-dismiss="modal" class="close-btn-toast" aria-label="Close" aria-expanded="false" onclick="closeToast('informativetoast')">
+                                        <span class="toast-btn-close govco-times"></span>
+                                    </a>
+                                </div>
+                                <div class="toast-body toast-body-govco">Mensaje de notificación corto y conciso como respuesta al usuario</div>
+                            </div>
+                            <pre>
+                                <code id="codeAlerta">
+                                    
+                                </code>
+                            </pre>
+                        </div>
+                    </div>
+                    <div class="item-accordion-govco">
+                        <h2 class="accordion-header" id="accordionPanels-modal">
+                            <button class="button-accordion-govco" type="button" data-bs-toggle="collapse" data-bs-target="#accordionPanels-collapseservicios" aria-expanded="true" aria-controls="accordionPanels-collapseOne" onclick="setCode('#codeServicio','#aserviceConsulta')">
+                          <span class="text-button-accordion-govco">Area de servicio</span>
+                        </button>
+                        </h2>
+                        <div id="accordionPanels-collapseservicios" class="collapse accordion-collapse code-toolbar" data-bs-parent="#accordionExampleOne">
+                            <div class="aservice aservice-spacing" id="aserviceConsulta">
+                                <div class="aservice-item">
+                                    <h2 class="aservice-header-govco" id="headingOne">
+                                        <button class="button-aservice-govco collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne" id="collapseOneButton">
+                                          <a class="aservice-text-govco">¿Tienes dudas sobre este trámite o consulta?</a>
+                                        </button>
+                                    </h2>
+                                    <div id="collapseOne" class="aservice-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#aserviceExampleOne">
+                                        <div class="aservice-body">
+                                            <div class="row aservice-row-govco">
+                                                <span class="mail-icon-govco"></span>
+                                                <div class="aservice-mailto-container">
+                                                    <a href="mailto:soporteccc@mintic.gov.co" class="aservice-mailto-govco">Enviar correo electrónico</a>
+                                                </div>
+                                            </div>
+                                            <div class="row aservice-row-govco aservice-row-center-govco">
+                                                <span class="headset-icon-govco"></span>
+                                                <p class="aservice-number-govco">(601) 123-45-78<br>01-8000-456-768</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <pre>
+                                <code id="codeServicio">
+                                    
+                                </code>
+                            </pre>
+                        </div>
+                    </div>
+                    <div class="item-accordion-govco">
+                        <h2 class="accordion-header" id="accordionPanels-modal">
+                            <button class="button-accordion-govco" type="button" data-bs-toggle="collapse" data-bs-target="#accordionPanels-collapsebutton" aria-expanded="true" aria-controls="accordionPanels-collapseOne">
+                          <span class="text-button-accordion-govco">Botones</span>
+                        </button>
+                        </h2>
+                        <div id="accordionPanels-collapsebutton" class="collapse accordion-collapse code-toolbar" data-bs-parent="#accordionExampleOne">
+                            <div style="display: inline-flex;flex-wrap: wrap;">
+                                <!-- Botón mixto - Variante Contenido -->
+                                <button type="button" class="btn-govco fill-btn-govco symbol-btn-govco mixed-btn-govco left-arrow-btn-govco" icon-position="left" style="width: 165px; height: 42px;" onclick="setCode('#codeButton','#idBotonMixto')" id="idBotonMixto">
+                                <span>Mostrar codigo</span>
+                            </button>
+                                <br/><br/>
+
+                                <!-- Botón mixto - Variante Contorno -->
+                                <button type="button" class="btn-govco outline-btn-govco symbol-btn-govco mixed-btn-govco left-arrow-btn-govco" icon-position="left" style="width: 165px; height: 42px;" onclick="setCode('#codeButton','#idBotonMixtoContorno')" id="idBotonMixtoContorno">
+                                <span>Mostrar codigo</span>
+                            </button>
+                                <br/><br/>
+
+                                <!-- Botón mixto - Variante Textual -->
+                                <button type="button" class="btn-govco no-fill-btn-govco symbol-btn-govco mixed-btn-govco left-arrow-btn-govco" icon-position="left" style="width: 123px; height: 32px;" onclick="setCode('#codeButton','#idBotonMixtoTextual')" id="idBotonMixtoTextual">
+                                <span class="sub-btn-govco">Mostrar codigo</span>
+                            </button>
+                                <br/><br/>
+
+                                <!-- Botón mixto - Variante Contenido invertido -->
+                                <button type="button" class="btn-govco fill-secundary-btn-govco symbol-btn-govco mixed-btn-govco left-arrow-btn-govco" icon-position="left" style="width: 165px; height: 42px;" onclick="setCode('#codeButton','#idBotonContenidoInvertido')" id="idBotonContenidoInvertido">
+                                <span>Mostrar codigo</span>
+                            </button>
+                                <br/><br/>
+
+                                <!-- Botón mixto - Variante Contorno invertido -->
+                                <button type="button" class="btn-govco outline-secundary-btn-govco symbol-btn-govco mixed-btn-govco left-arrow-btn-govco" icon-position="left" style="width: 165px; height: 42px;" onclick="setCode('#codeButton','#idBotonContornoInvertido')" id="idBotonContornoInvertido">
+                                <span>Mostrar codigo</span>
+                            </button>
+                                <br/><br/>
+
+                                <!-- Botón mixto - Variante Textual invertido -->
+                                <button type="button" class="btn-govco no-fill-btn-govco symbol-btn-govco fill-mixed-btn-govco left-arrow-btn-govco" icon-position="left" style="width: 123px; height: 32px;" onclick="setCode('#codeButton','#idBotonTextualInvertido')" id="idBotonTextualInvertido">
+                                <span class="sub-btn-govco">Mostrar codigo</span>
+                            </button>
+                            </div>
+
+                            <pre class="col-12">
+                                <code id="codeButton">
+                                    
+                                </code>
+                            </pre>
+                        </div>
+                    </div>
+                    <div class="item-accordion-govco">
+                        <h2 class="accordion-header" id="accordionPanels-modal">
+                            <button class="button-accordion-govco" type="button" data-bs-toggle="collapse" data-bs-target="#accordionPanels-collapsebuscador" aria-expanded="true" aria-controls="accordionPanels-collapseOne" onclick="setCode('#codeBuscador','#search-govco')">
+                          <span class="text-button-accordion-govco">Buscador</span>
+                        </button>
+                        </h2>
+                        <div id="accordionPanels-collapsebuscador" class="collapse accordion-collapse code-toolbar" data-bs-parent="#accordionExampleOne">
+                            <div class="search-govco" id="search-govco">
+                                <div class="bar-search-govco">
+                                    <input type="text" placeholder="Buscar por componente" class="input-search-govco" aria-label="Buscador" />
+                                    <button class="icon-search-govco icon-close-search-govco" aria-label="Limpiar"></button>
+                                    <div class="icon-search-govco search-icon-search-govco" aria-hidden="true"></div>
+                                </div>
+                                <div class="container-options-search-govco">
+                                    <div class="options-search-govco">
+                                        <ul>
+                                            <li>
+                                                <a href="#" tabindex="-1">Sugerencia de búsqueda con la palabra <strong>Componente 1</strong></a>
+                                            </li>
+                                            <li>
+                                                <a href="#" tabindex="-1">Sugerencia de búsqueda con la palabra <strong>Componente 1</strong></a>
+                                            </li>
+                                            <li>
+                                                <a href="#" tabindex="-1">Sugerencia de búsqueda con la palabra <strong>Componente 1</strong></a>
+                                            </li>
+                                            <li>
+                                                <a href="#" tabindex="-1">Sugerencia de búsqueda con la palabra <strong>Componente 1</strong></a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <pre class="col-12">
+                                <code id="codeBuscador">
+                                    
+                                </code>
+                            </pre>
+                        </div>
+                    </div>
+                    <div class="item-accordion-govco">
+                        <h2 class="accordion-header" id="accordionPanels-modal">
+                            <button class="button-accordion-govco" type="button" data-bs-toggle="collapse" data-bs-target="#accordionPanels-collapsegaleria" aria-expanded="true" aria-controls="accordionPanels-collapseOne" onclick="setCode('#codegaleria','#galeria')">
+                          <span class="text-button-accordion-govco">Galeria de Aplicaciones</span>
+                        </button>
+                        </h2>
+                        <div id="accordionPanels-collapsegaleria" class="collapse accordion-collapse code-toolbar" data-bs-parent="#accordionExampleOne">
+                            <div class="row justify-content-md-center mt-3" id="galeria">
+                                <div class="dropdown-container-govco">
+                                    <div class="dropdown dropdown-candy-box-govco">
+                                        <button class="btn btn-primary button-rounded-menu-govco" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                        <div class="dropdown-arrow-govco"></div>
+                                        <span class="tooltip-text-govco">Acceda a Carpeta Ciudadana Digital y demás servicios relacionados con el Portal Único del Estado Colombiano.</span>
+                                      </button>
+                                        <div class="dropdown-arrow-govco"></div>
+                                        <div class="dropdown-menu dropdown-menu-candy-box-govco" aria-labelledby="dropdownMenuButton1">
+                                            <span class="dropdown-title dropdown-title-govco" id="dropdown-title-id-govco">Aplicaciones y servicios GOV.CO</span>
+                                            <ul class="dropdown-item-menu-ul">
+                                                <li class="dropdown-item-menu-li">
+                                                    <a class="dropdown-item dropdown-item-govco" id='govco-govco' href="javascript:void(0)" onclick="activeItemCandy('govco-govco')">
+                                                        <span class="item-active-icon-background-govco"></span>
+                                                        <span class="item-active-icon-govco"></span>
+                                                        <div class="dropdown-item-icon-govco"><span class="icon-govco-govco"></span></div>
+                                                        <span>Portal GOV.CO</span>
+                                                    </a>
+                                                </li>
+                                                <li class="dropdown-item-menu-li">
+                                                    <a class="dropdown-item dropdown-item-govco" id='folder-user' href="javascript:void(0)" onclick="activeItemCandy('folder-user')">
+                                                        <span class="item-active-icon-background-govco"></span>
+                                                        <span class="item-active-icon-govco"></span>
+                                                        <div class="dropdown-item-icon-govco"><span class="icon-folder-user-govco"></span></div>
+                                                        <span>Carpeta Ciudadana</span>
+                                                    </a>
+                                                </li>
+                                                <li class="dropdown-item-menu-li">
+                                                    <a class="dropdown-item dropdown-item-govco" id='ciiu-govco' href="javascript:void(0)" onclick="activeItemCandy('ciiu-govco')">
+                                                        <span class="item-active-icon-background-govco"></span>
+                                                        <span class="item-active-icon-govco"></span>
+                                                        <div class="dropdown-item-icon-govco"><span class="icon-ciiu-govco"></span></div>
+                                                        <span>Consulta CIIU</span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <pre class="col-12">
+                                <code id="codegaleria">
+                                    
+                                </code>
+                            </pre>
+                        </div>
+                    </div>
+                    <div class="item-accordion-govco">
+                        <h2 class="accordion-header" id="accordionPanels-modal">
+                            <button class="button-accordion-govco" type="button" data-bs-toggle="collapse" data-bs-target="#accordionPanels-collapsecarousel" aria-expanded="true" aria-controls="accordionPanels-collapseOne" onclick="setCode('#codecarousel','#carouselExampleGovco1')">
+                          <span class="text-button-accordion-govco">Carousel</span>
+                        </button>
+                        </h2>
+                        <div id="accordionPanels-collapsecarousel" class="collapse accordion-collapse code-toolbar" data-bs-parent="#accordionExampleOne">
+                            <div id="carouselExampleGovco1" class="carousel slide carousel-fade carrusel-govco" data-bs-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active" data-bs-interval="2000">
+                                        <a href="" title="..." tabindex="0">
+                                            <img src="https://govco-prod-webutils.s3.amazonaws.com/uploads/fondo-gris-carrusel.jpg" alt="...">
+                                        </a>
+                                        <div class="carousel-caption">
+                                            <a href="" title="..." tabindex="0">
+                                                <h5>Lorem ipsum dolor</h5>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item" data-bs-interval="2000">
+                                        <a href="" title="..." tabindex="-1">
+                                            <img src="https://govco-prod-webutils.s3.amazonaws.com/uploads/fondo-gris-carrusel.jpg" alt="...">
+                                        </a>
+                                        <div class="carousel-caption">
+                                            <a href="" title="..." tabindex="0">
+                                                <h5>Lorem ipsum dolor</h5>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item" data-bs-interval="2000">
+                                        <a href="" title="..." tabindex="-1">
+                                            <img src="https://govco-prod-webutils.s3.amazonaws.com/uploads/fondo-gris-carrusel.jpg" alt="...">
+                                        </a>
+                                        <div class="carousel-caption">
+                                            <a href="" title="..." tabindex="0">
+                                                <h5>Lorem ipsum dolor</h5>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item" data-bs-interval="2000">
+                                        <a href="" title="..." tabindex="-1">
+                                            <img src="https://govco-prod-webutils.s3.amazonaws.com/uploads/fondo-gris-carrusel.jpg" alt="...">
+                                        </a>
+                                        <div class="carousel-caption">
+                                            <a href="" title="..." tabindex="0">
+                                                <h5>Lorem ipsum dolor</h5>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleGovco1" data-bs-slide="next">
+                                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                  <span class="visually-hidden">Próxima imagen</span>
+                                </button>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleGovco1" data-bs-slide="prev">
+                                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                  <span class="visually-hidden">Anterior imagén</span>
+                                </button>
+                                <div class="control-start-pause">
+                                    <button class="controls start" type="button">
+                                    <span>Reproducir</span>
+                                  </button>
+                                    <button class="controls pause active" type="button">
+                                    <span>Pausar</span>
+                                  </button>
+                                </div>
+                                <div class="carousel-indicators">
+                                    <button type="button" data-bs-target="#carouselExampleGovco1" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                    <button type="button" data-bs-target="#carouselExampleGovco1" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                    <button type="button" data-bs-target="#carouselExampleGovco1" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                    <button type="button" data-bs-target="#carouselExampleGovco1" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                                </div>
+                            </div>
+                            <pre class="col-12">
+                                <code id="codecarousel">
+                                    
+                                </code>
+                            </pre>
+                        </div>
+                    </div>
+                    <div class="item-accordion-govco">
+                        <h2 class="accordion-header" id="accordionPanels-modal">
+                            <button class="button-accordion-govco" type="button" data-bs-toggle="collapse" data-bs-target="#accordionPanels-collapsecarouselmultiple" aria-expanded="true" aria-controls="accordionPanels-collapseOne" onclick="setCode('#codecarouselmultiple','#carouselExampleGovco3')">
+                          <span class="text-button-accordion-govco">Carousel Multiple</span>
+                        </button>
+                        </h2>
+                        <div id="accordionPanels-collapsecarouselmultiple" class="collapse accordion-collapse code-toolbar" data-bs-parent="#accordionExampleOne">
+                            <div id="carouselExampleGovco3" class="carousel slide multiple-carrusel-govco carousel-fade carrusel-govco" data-bs-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item multiple-carrusel-govco active" data-bs-interval="2000">
+                                        <div class="carousel-caption">
+                                            <a href="" title="..." tabindex="0">
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</p>
+                                            </a>
+                                        </div>
+                                        <a href="" title="..." tabindex="0">
+                                            <img src="https://govco-prod-webutils.s3.amazonaws.com/uploads/fondo-gris-carrusel-multiple.jpg" alt="...">
+                                        </a>
+                                    </div>
+                                    <div class="carousel-item multiple-carrusel-govco" data-bs-interval="2000">
+                                        <div class="carousel-caption">
+                                            <a href="" title="..." tabindex="-1">
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</p>
+                                            </a>
+                                        </div>
+                                        <a href="" title="..." tabindex="-1">
+                                            <img src="https://govco-prod-webutils.s3.amazonaws.com/uploads/fondo-gris-carrusel-multiple.jpg" alt="...">
+                                        </a>
+                                    </div>
+                                    <div class="carousel-item multiple-carrusel-govco" data-bs-interval="2000">
+                                        <div class="carousel-caption">
+                                            <a href="" title="..." tabindex="-1">
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</p>
+                                            </a>
+                                        </div>
+                                        <a href="" title="..." tabindex="-1">
+                                            <img src="https://govco-prod-webutils.s3.amazonaws.com/uploads/fondo-gris-carrusel-multiple.jpg" alt="...">
+                                        </a>
+                                    </div>
+                                    <div class="carousel-item multiple-carrusel-govco" data-bs-interval="2000">
+                                        <div class="carousel-caption">
+                                            <a href="" title="..." tabindex="-1">
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</p>
+                                            </a>
+                                        </div>
+                                        <a href="" title="..." tabindex="-1">
+                                            <img src="https://govco-prod-webutils.s3.amazonaws.com/uploads/fondo-gris-carrusel-multiple.jpg" alt="...">
+                                        </a>
+                                    </div>
+                                </div>
+                                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleGovco3" data-bs-slide="next">
+                                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                  <span class="visually-hidden">Próxima imagen</span>
+                                </button>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleGovco3" data-bs-slide="prev">
+                                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                  <span class="visually-hidden">Anterior imagén</span>
+                                </button>
+                                <div class="control-start-pause">
+                                    <button class="controls start" type="button">
+                                    <span>Reproducir</span>
+                                  </button>
+                                    <button class="controls pause active" type="button">
+                                    <span>Pausar</span>
+                                  </button>
+                                </div>
+                                <div class="carousel-indicators">
+                                    <button type="button" data-bs-target="#carouselExampleGovco3" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                    <button type="button" data-bs-target="#carouselExampleGovco3" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                    <button type="button" data-bs-target="#carouselExampleGovco3" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                    <button type="button" data-bs-target="#carouselExampleGovco3" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                                </div>
+                            </div>
+                            <pre class="col-12">
+                                <code id="codecarouselmultiple">
+                                    
+                                </code>
+                            </pre>
+                        </div>
+                    </div>
+                    <div class="item-accordion-govco">
+                        <h2 class="accordion-header" id="accordionPanels-modal">
+                            <button class="button-accordion-govco" type="button" data-bs-toggle="collapse" data-bs-target="#accordionPanels-collapseeemergente" aria-expanded="true" aria-controls="accordionPanels-collapseOne" onclick="setCode('#codeemergente','#emergente')">
+                          <span class="text-button-accordion-govco">Descripcion Emergente</span>
+                        </button>
+                        </h2>
+                        <div id="accordionPanels-collapseeemergente" class="collapse accordion-collapse code-toolbar" data-bs-parent="#accordionExampleOne">
+                            <div class="row p-5">
+                                <div class="col-md-5"></div>
+                                <div class="col-md-2 mt-5" id="emergente">
+                                    <button class="btn-descripcion-emergente-govco descripcion-emergente-govco top ">
+                                    <span class="tiptext">Descripción emergente</span>
+                                  </button>
+                                </div>
+                            </div>
+                            <pre class="col-12">
+                                <code id="codeemergente">
+                                    
+                                </code>
+                            </pre>
+                        </div>
+                    </div>
+                    <div class="item-accordion-govco">
+                        <h2 class="accordion-header" id="accordionPanels-modal">
+                            <button class="button-accordion-govco" type="button" data-bs-toggle="collapse" data-bs-target="#accordionPanels-collapseetiqueta" aria-expanded="true" aria-controls="accordionPanels-collapseOne" onclick="setCode('#codeetiquetas','#etiquetas')">
+                          <span class="text-button-accordion-govco">Etiquetas</span>
+                        </button>
+                        </h2>
+                        <div id="accordionPanels-collapseetiqueta" class="collapse accordion-collapse code-toolbar" data-bs-parent="#accordionExampleOne">
+
+                            <div id="etiquetas">
+                                <div class="m-3 p-2">
+                                    <span class="etiqueta-govco">
+                                    Etiqueta informativa
+                                  </span>
+                                </div>
+                                <div class="m-3 p-2">
+                                    <span class="etiqueta-govco completado">
+                                    Etiqueta de estado
+                                  </span>
+                                </div>
+                                <div class="m-3 p-2">
+                                    <span class="etiqueta-govco error">
+                                    Etiqueta de estado
+                                  </span>
+                                </div>
+                                <div class="m-3 p-2">
+                                    <span class="etiqueta-govco pendiente">
+                                    Etiqueta de estado
+                                  </span>
+                                </div>
+                            </div>
+                            <pre class="col-12">
+                                <code id="codeetiquetas">
+                                    
+                                </code>
+                            </pre>
+                        </div>
+                    </div>
+                    <div class="item-accordion-govco">
+                        <h2 class="accordion-header" id="accordionPanels-modal">
+                            <button class="button-accordion-govco" type="button" data-bs-toggle="collapse" data-bs-target="#accordionPanels-collapsespinner" aria-expanded="true" aria-controls="accordionPanels-collapseOne" onclick="setCode('#codespinner','.spinner-indicador-de-carga-govco')">
+                          <span class="text-button-accordion-govco">Spinner Cargando</span>
+                        </button>
+                        </h2>
+                        <div id="accordionPanels-collapsespinner" class="collapse accordion-collapse code-toolbar" data-bs-parent="#accordionExampleOne">
+
+                            <div class="spinner-indicador-de-carga-govco" style="width: 60px; height: 60px; border-width: 8px;" role="status">
+                                <span class="visually-hidden">Cargando...</span>
+                            </div>
+                            <pre class="col-12">
+                                <code id="codespinner">
+                                    
+                                </code>
+                            </pre>
+                        </div>
+                    </div>
+                    <div class="item-accordion-govco">
+                        <h2 class="accordion-header" id="accordionPanels-modal">
+                            <button class="button-accordion-govco" type="button" data-bs-toggle="collapse" data-bs-target="#accordionPanels-collapseavance" aria-expanded="true" aria-controls="accordionPanels-collapseOne" onclick="setCode('#codeavance','.container-example-linea-avance-govco')">
+                          <span class="text-button-accordion-govco">Avance</span>
+                        </button>
+                        </h2>
+                        <div id="accordionPanels-collapseavance" class="collapse accordion-collapse code-toolbar" data-bs-parent="#accordionExampleOne">
+
+                            <div class="container-example-linea-avance-govco">
+                                <div class="linea-avance-govco h-linea-avance-govco" id="lineaAvance1">
+                                    <div class="progress">
+                                        <div class="progress-bar" role="progressbar" style="width: 15%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                    <div class="items-header-linea-avance-govco">
+                                        <div class="header-linea-avance-govco active-linea-avance-govco">
+                                            <div class="indicator-linea-avance-govco" data-la-target="#itemLineaAvance11" percentage="15">1</div>
+                                            <span class="title-linea-avance-govco">Inicio</span>
+                                        </div>
+                                        <div class="header-linea-avance-govco">
+                                            <div class="indicator-linea-avance-govco" data-la-target="#itemLineaAvance12" percentage="50">2</div>
+                                            <span class="title-linea-avance-govco">Hago mi solicitud</span>
+                                        </div>
+                                        <div class="header-linea-avance-govco">
+                                            <div class="indicator-linea-avance-govco" data-la-target="#itemLineaAvance13" percentage="80">3</div>
+                                            <span class="title-linea-avance-govco">Procesan mi solicitud</span>
+                                        </div>
+                                        <div class="header-linea-avance-govco">
+                                            <div class="indicator-linea-avance-govco" data-la-target="#itemLineaAvance14" percentage="100">4</div>
+                                            <span class="title-linea-avance-govco">Respuesta</span>
+                                        </div>
+                                    </div>
+                                    <div id="itemLineaAvance11" class="body-linea-avance-govco active-linea-avance-govco" data-la-parent="#lineaAvance1">
+                                        <!-- Contenido Item -->
+                                        <div class="contents-example-linea-avance-govco">
+                                            <button type="button" class="btn-govco fill-btn-govco" style="width: 165px; height: 42px;" onclick="nextItemAdvanceLineHorizontal(event)">Continuar</button>
+                                        </div>
+                                    </div>
+                                    <div id="itemLineaAvance12" class="body-linea-avance-govco" data-la-parent="#lineaAvance1">
+                                        <!-- Contenido Item -->
+                                        <div class="contents-example-linea-avance-govco">
+                                            <button type="button" class="btn-govco fill-btn-govco" style="width: 165px; height: 42px;" onclick="nextItemAdvanceLineHorizontal(event)">Continuar</button>
+                                        </div>
+                                    </div>
+                                    <div id="itemLineaAvance12" class="body-linea-avance-govco" data-la-parent="#lineaAvance1">
+                                        <!-- Contenido Item -->
+                                        <div class="contents-example-linea-avance-govco">
+                                            <button type="button" class="btn-govco fill-btn-govco" style="width: 165px; height: 42px;" onclick="nextItemAdvanceLineHorizontal(event)">Continuar</button>
+                                        </div>
+                                    </div>
+                                    <div id="itemLineaAvance14" class="body-linea-avance-govco" data-la-parent="#lineaAvance1">
+                                        <!-- Contenido Item -->
+                                        <div class="contents-example-linea-avance-govco">
+                                            <button type="button" class="btn-govco fill-btn-govco" style="width: 165px; height: 42px;">Finalizar</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <pre class="col-12">
+                                <code id="codeavance">
+                                    
+                                </code>
+                            </pre>
+                        </div>
+                    </div>
+                    <div class="item-accordion-govco">
+                        <h2 class="accordion-header" id="accordionPanels-modal">
+                            <button class="button-accordion-govco" type="button" data-bs-toggle="collapse" data-bs-target="#accordionPanels-collapseavancevertical" aria-expanded="true" aria-controls="accordionPanels-collapseOne" onclick="setCode('#codeavancevertical','#avanceVertical')">
+                          <span class="text-button-accordion-govco">Avance Vertical</span>
+                        </button>
+                        </h2>
+                        <div id="accordionPanels-collapseavancevertical" class="collapse accordion-collapse code-toolbar" data-bs-parent="#accordionExampleOne">
+
+                            <div class="container-example-linea-avance-govco" id="avanceVertical">
+                                <div class="linea-avance-govco v-linea-avance-govco" id="lineaAvance2">
+                                    <div class="progress">
+                                        <div class="progress-bar" role="progressbar" style="height: 15%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                    <div class="item-linea-avance-govco active-linea-avance-govco">
+                                        <div class="header-linea-avance-govco">
+                                            <div class="indicator-linea-avance-govco" data-la-target="#itemLineaAvance21" percentage="15">1</div>
+                                            <span class="title-linea-avance-govco">Inicio</span>
+                                        </div>
+                                        <div id="itemLineaAvance21" class="body-linea-avance-govco" data-la-parent="#lineaAvance2">
+                                            <!-- Contenido Item -->
+                                            <div class="contents-example-linea-avance-govco">
+                                                <button type="button" class="btn-govco fill-btn-govco" style="width: 165px; height: 42px;" onclick="nextItemAdvanceLineVertical(event)">Continuar</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item-linea-avance-govco">
+                                        <div class="header-linea-avance-govco">
+                                            <div class="indicator-linea-avance-govco" data-la-target="#itemLineaAvance22" percentage="50">2</div>
+                                            <span class="title-linea-avance-govco">Hago mi solicitud</span>
+                                        </div>
+                                        <div id="itemLineaAvance22" class="body-linea-avance-govco" data-la-parent="#lineaAvance2">
+                                            <!-- Contenido Item -->
+                                            <div class="contents-example-linea-avance-govco">
+                                                <button type="button" class="btn-govco fill-btn-govco" style="width: 165px; height: 42px;" onclick="nextItemAdvanceLineVertical(event)">Continuar</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item-linea-avance-govco">
+                                        <div class="header-linea-avance-govco">
+                                            <div class="indicator-linea-avance-govco" data-la-target="#itemLineaAvance23" percentage="80">3</div>
+                                            <span class="title-linea-avance-govco">Procesan mi solicitud</span>
+                                        </div>
+                                        <div id="itemLineaAvance23" class="body-linea-avance-govco" data-la-parent="#lineaAvance2">
+                                            <!-- Contenido Item -->
+                                            <div class="contents-example-linea-avance-govco">
+                                                <button type="button" class="btn-govco fill-btn-govco" style="width: 165px; height: 42px;" onclick="nextItemAdvanceLineVertical(event)">Continuar</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item-linea-avance-govco">
+                                        <div class="header-linea-avance-govco">
+                                            <div class="indicator-linea-avance-govco" data-la-target="#itemLineaAvance24" percentage="100">4</div>
+                                            <span class="title-linea-avance-govco">Respuesta</span>
+                                        </div>
+                                        <div id="itemLineaAvance24" class="body-linea-avance-govco" data-la-parent="#lineaAvance2">
+                                            <!-- Contenido Item -->
+                                            <div class="contents-example-linea-avance-govco">
+                                                <button type="button" class="btn-govco fill-btn-govco" style="width: 165px; height: 42px;">Finalizar</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <pre class="col-12">
+                                <code id="codeavancevertical">
+                                    
+                                </code>
+                            </pre>
+                        </div>
+                    </div>
+                    <div class="item-accordion-govco">
+                        <h2 class="accordion-header" id="accordionPanels-modal">
+                            <button class="button-accordion-govco" type="button" data-bs-toggle="collapse" data-bs-target="#accordionPanels-collapseavanceinteraccion" aria-expanded="true" aria-controls="accordionPanels-collapseOne" onclick="setCode('#codeavanceinteraccion','#avanceInteraccion')">
+                          <span class="text-button-accordion-govco">Avance de Interaccion</span>
+                        </button>
+                        </h2>
+                        <div id="accordionPanels-collapseavanceinteraccion" class="collapse accordion-collapse code-toolbar" data-bs-parent="#accordionExampleOne">
+
+                            <div class="container-example-linea-avance-govco" id="avanceInteaccion">
+                                <div class="linea-avance-govco ih-linea-avance-govco" id="lineaAvance3">
+                                    <div class="progress">
+                                        <div class="progress-bar" role="progressbar" style="width: 15%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                    <div class="items-header-linea-avance-govco">
+                                        <div class="header-linea-avance-govco active-linea-avance-govco">
+                                            <button class="indicator-linea-avance-govco" type="button" data-la-target="#itemLineaAvance31" percentage="15">
+                                            <span>1</span>
+                                        </button>
+                                            <span class="title-linea-avance-govco">Inicio</span>
+                                        </div>
+                                        <div class="header-linea-avance-govco">
+                                            <button class="indicator-linea-avance-govco" type="button" data-la-target="#itemLineaAvance32" percentage="50">
+                                            <span>2</span>
+                                        </button>
+                                            <span class="title-linea-avance-govco">Confirmar identidad</span>
+                                        </div>
+                                        <div class="header-linea-avance-govco">
+                                            <button class="indicator-linea-avance-govco" type="button" data-la-target="#itemLineaAvance33" percentage="80">
+                                            <span>3</span>
+                                        </button>
+                                            <span class="title-linea-avance-govco">Generar solicitud</span>
+                                        </div>
+                                        <div class="header-linea-avance-govco">
+                                            <button class="indicator-linea-avance-govco" type="button" data-la-target="#itemLineaAvance34" percentage="100">
+                                            <span>4</span>
+                                        </button>
+                                            <span class="title-linea-avance-govco">Datos adicionales</span>
+                                        </div>
+                                    </div>
+                                    <div id="itemLineaAvance31" class="body-linea-avance-govco active-linea-avance-govco" data-la-parent="#lineaAvance3">
+                                        <div class="contents-linea-avance-govco">
+                                            <!-- Contenido Item -->
+                                            <div class="contents-example-linea-avance-govco">
+                                                <h5>Información de contacto</h5>
+                                                <div class="entradas-de-texto-govco">
+                                                    <label for="input-basico-id">Nombres</label>
+                                                    <input type="text" id="input-basico-id" placeholder="Ejemplo: Campo de texto" />
+                                                </div>
+                                                <div class="entradas-de-texto-govco">
+                                                    <label for="input-basico-id">Apellidos</label>
+                                                    <input type="text" id="input-basico-id" placeholder="Ejemplo: Campo de texto" />
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-12 col-xs-12 col-sm-6">
+                                                        <label for="lista-desplegables" class="label-desplegable-govco">Tipo de documento<span aria-required="true">*</span></label>
+                                                        <div class="desplegable-govco" style="width:255px; height: 40px;" id="lista-desplegables" data-type="basic">
+                                                            <select>
+                                                    <option disabled selected>Escoger</option>
+                                                    <option value="1">Cédula de ciudadanía</option>
+                                                    <option value="2">Cédula de extranjería</option>
+                                                </select>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12 col-xs-12 col-sm-6">
+                                                        <div class="entradas-de-texto-govco">
+                                                            <label for="input-basico-id">Número de documento<span aria-required="true">*</span></label>
+                                                            <input type="text" id="input-basico-id" placeholder="Ingresa tu número" />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="d-flex justify-content-end">
+                                                    <button type="button" class="btn-govco fill-btn-govco" style="width: 165px; height: 42px; margin-top: 23px;" onclick="nextItemAdvanceLineIHorizonal(event)">Continuar</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="itemLineaAvance32" class="body-linea-avance-govco" data-la-parent="#lineaAvance3">
+                                        <div class="contents-linea-avance-govco">
+                                            <!-- Contenido Item -->
+                                            <div class="contents-example-linea-avance-govco">
+                                                <h5>Confirmar identidad</h5>
+                                                <p>Se realizará un análisis biométrico facial, mediante una serie de retos aleatorios como pestañear, sonreír o abrir la boca.</p>
+                                                <img src="https://govco-prod-webutils.s3.amazonaws.com/uploads/Identidad-Linea-Avance.jpg" alt="...">
+                                                <div class="d-flex justify-content-end">
+                                                    <button type="button" class="btn-govco fill-btn-govco" style="width: 165px; height: 42px; margin-top: 16px;" onclick="nextItemAdvanceLineIHorizonal(event)">Continuar</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="itemLineaAvance33" class="body-linea-avance-govco" data-la-parent="#lineaAvance3">
+                                        <div class="contents-linea-avance-govco">
+                                            <!-- Contenido Item -->
+                                            <div class="contents-example-linea-avance-govco">
+                                                <h5>Generar solicitud</h5>
+                                                <label for="lista-desplegables2" class="label-desplegable-govco">Tipo de solicitud<span aria-required="true">*</span></label>
+                                                <div class="desplegable-govco" style="width:255px; height: 40px;" id="lista-desplegables2" data-type="basic">
+                                                    <select>
+                                                <option disabled selected>Escoger</option>
+                                                <option value="1">Cédula de ciudadanía</option>
+                                                <option value="2">Cédula de extranjería</option>
+                                            </select>
+                                                </div>
+                                                <div class="entradas-de-texto-govco">
+                                                    <label for="input-basico-id">Total ingresos mensuales</label>
+                                                    <input type="text" id="input-basico-id" placeholder="Ejm: $ 1.500.000 COP" />
+                                                </div>
+                                                <label class="label-desplegable-govco">¿Es beneficiario de otro programa?</label>
+                                                <div>
+                                                    <div class="radio-seleccion-govco">
+                                                        <input type="radio" id="radio31" name="radioButton31" value="0">
+                                                        <label for="radio31">Si</label>
+                                                    </div>
+                                                    <div class="radio-seleccion-govco">
+                                                        <input type="radio" id="radio32" name="radioButton31" value="1">
+                                                        <label for="radio32">No</label>
+                                                    </div>
+                                                </div>
+                                                <div class="d-flex justify-content-end">
+                                                    <button type="button" class="btn-govco fill-btn-govco" style="width: 165px; height: 42px; margin-top: 59px;" onclick="nextItemAdvanceLineIHorizonal(event)">Continuar</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="itemLineaAvance34" class="body-linea-avance-govco" data-la-parent="#lineaAvance3">
+                                        <div class="contents-linea-avance-govco">
+                                            <!-- Contenido Item -->
+                                            <div class="contents-example-linea-avance-govco">
+                                                <h5>Datos adicionales</h5>
+                                                <p>Para nosotros es muy importante contar con esta información, ya que nos permitirá contactarte de forma rápida y segura.</p>
+                                                <label class="label-desplegable-govco">¿Tienes algun tipo de discapacidad?</label>
+                                                <div>
+                                                    <div class="radio-seleccion-govco">
+                                                        <input type="radio" id="radio321" name="radioButton32" value="0">
+                                                        <label for="radio321">Si</label>
+                                                    </div>
+                                                    <div class="radio-seleccion-govco">
+                                                        <input type="radio" id="radio322" name="radioButton32" value="1">
+                                                        <label for="radio322">No</label>
+                                                    </div>
+                                                </div>
+                                                <label for="lista-desplegables3" class="label-desplegable-govco" style="margin-top: 16px;">¿Cúal discapacidad?</label>
+                                                <div class="desplegable-govco" style="width:255px; height: 40px;" id="lista-desplegables3" data-type="basic">
+                                                    <select>
+                                                <option disabled selected>Escoger</option>
+                                                <option value="1">Opción 1</option>
+                                                <option value="2">Opción 2</option>
+                                            </select>
+                                                </div>
+                                                <div class="d-flex justify-content-end">
+                                                    <button type="button" class="btn-govco fill-btn-govco" style="width: 165px; height: 42px; margin-top: 85px;">Finalizar</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <pre class="col-12">
+                                <code id="codeavanceinteraccion">
+                                    
+                                </code>
+                            </pre>
+                        </div>
+                    </div>
+                    <div class="item-accordion-govco">
+                        <h2 class="accordion-header" id="accordionPanels-modal">
+                            <button class="button-accordion-govco" type="button" data-bs-toggle="collapse" data-bs-target="#accordionPanels-collapsemenu" aria-expanded="true" aria-controls="accordionPanels-collapseOne" onclick="setCode('#codemenu','#menu')">
+                          <span class="text-button-accordion-govco">Menu de navegacion</span>
+                        </button>
+                        </h2>
+                        <div id="accordionPanels-collapsemenu" class="collapse accordion-collapse code-toolbar" data-bs-parent="#accordionExampleOne">
+
+                            <div class="container-navbar-menu-govco blue-menu-govco" id="menu">
+                                <nav class="navbar navbar-expand-lg navbar-menu-govco" role="navigation" aria-label="Menú ejemplo entidad">
+                                    <div class="container-fluid container-second-navbar-menu-govco">
+                                        <a class="navbar-brand navbar-toggler icon-entidad-menu-govco" href="#"></a>
+                                        <button class="navbar-toggler button-responsive-menu-govco collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                                      <span class="icon-bars-menu-govco"></span>
+                                    </button>
+                                        <div class="collapse navbar-collapse navbar-collapse-menu-govco" id="navbarScroll">
+                                            <div class="container-search-icon-menu-govco navbar-toggler">
+                                                <!-- SEARCH -->
+                                                <div class="search-govco">
+                                                    <div class="bar-search-govco">
+                                                        <input type="text" placeholder="Buscar por componente" class="input-search-govco" aria-label="Buscador" />
+                                                        <button class="icon-search-govco icon-close-search-govco" aria-label="Limpiar"></button>
+                                                        <div class="icon-search-govco search-icon-search-govco" aria-hidden="true"></div>
+                                                    </div>
+                                                    <div class="container-options-search-govco">
+                                                        <div class="options-search-govco">
+                                                            <ul>
+                                                                <li>
+                                                                    <a href="#" tabindex="-1">Sugerencia de búsqueda con la palabra <strong>Componente 1</strong></a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#" tabindex="-1">Sugerencia de búsqueda con la palabra <strong>Componente 1</strong></a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#" tabindex="-1">Sugerencia de búsqueda con la palabra <strong>Componente 1</strong></a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#" tabindex="-1">Sugerencia de búsqueda con la palabra <strong>Componente 1</strong></a>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- END SEARCH -->
+                                                <a class="icon-user-alt-menu-govco" href="#"></a>
+                                            </div>
+                                            <ul class="navbar-nav navbar-nav-menu-govco ms-auto">
+                                                <li class="nav-item">
+                                                    <a class="nav-link dir-menu-govco active" aria-current="page" href="#">
+                                                        <span class="text-item-menu-govco">
+                                              Inicio
+                                            </span>
+                                                    </a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a class="nav-link dir-menu-govco" aria-current="page" href="#">
+                                                        <span class="text-item-menu-govco">
+                                              Transparencia y acceso información pública
+                                            </span>
+                                                    </a>
+                                                </li>
+                                                <li class="nav-item dropdown">
+                                                    <a class="nav-link" href="#" id="navbarDropdown1" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                        <span class="container-text-icon-menu-govco">
+                                              <span class="text-item-menu-govco">Atención y Servicios a la ciudadanía</span>
+                                                        <span class="icon-caret-menu-govco"></span>
+                                                        </span>
+                                                    </a>
+                                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                                        <li><a class="dropdown-item dir-menu-govco" href="#">Trámites</a></li>
+                                                        <li><a class="dropdown-item dir-menu-govco" href="#">Trámites</a></li>
+                                                        <li><a class="dropdown-item dir-menu-govco" href="#">Trámites</a></li>
+                                                        <li><a class="dropdown-item dir-menu-govco" href="#">Trámites</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li class="nav-item dropdown">
+                                                    <a class="nav-link" href="#" id="navbarDropdown2" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                        <span class="container-text-icon-menu-govco">
+                                              <span class="text-item-menu-govco">Participa</span>
+                                                        <span class="icon-caret-menu-govco"></span>
+                                                        </span>
+                                                    </a>
+                                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                                        <li><a class="dropdown-item dir-menu-govco" href="#">Trámites</a></li>
+                                                        <li><a class="dropdown-item dir-menu-govco" href="#">Trámites</a></li>
+                                                        <li><a class="dropdown-item dir-menu-govco" href="#">Trámites</a></li>
+                                                        <li><a class="dropdown-item dir-menu-govco" href="#">Trámites</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li class="nav-item dropdown has-megamenu-menu-govco">
+                                                    <a class="nav-link" href="#" id="navbarDropdown3" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                        <span class="container-text-icon-menu-govco">
+                                              <span class="text-item-menu-govco">Ítem menú adicional</span>
+                                                        <span class="icon-caret-menu-govco"></span>
+                                                        </span>
+                                                    </a>
+                                                    <div class="dropdown-menu dropdown-menu-end megamenu-menu-govco" role="menu">
+                                                        <div class="g-3 container-items-govco">
+                                                            <div class="colum-item-menu-govco">
+                                                                <span class="title">Nombre sección interna 1</span>
+                                                                <hr class="dropdown-divider">
+                                                                <ul class="list-unstyled">
+                                                                    <li><a class="dropdown-item dir-menu-govco" href="#">Trámites</a></li>
+                                                                    <li><a class="dropdown-item dir-menu-govco" href="#">Trámites</a></li>
+                                                                    <li><a class="dropdown-item dir-menu-govco" href="#">Trámites</a></li>
+                                                                    <li><a class="dropdown-item dir-menu-govco" href="#">Trámites</a></li>
+                                                                </ul>
+                                                            </div>
+                                                            <!-- end col-3 -->
+                                                            <div class="colum-item-menu-govco">
+                                                                <span class="title">Nombre sección interna 2</span>
+                                                                <hr class="dropdown-divider">
+                                                                <ul class="list-unstyled">
+                                                                    <li><a class="dropdown-item dir-menu-govco" href="#">Trámites</a></li>
+                                                                    <li><a class="dropdown-item dir-menu-govco" href="#">Trámites</a></li>
+                                                                    <li><a class="dropdown-item dir-menu-govco" href="#">Trámites</a></li>
+                                                                    <li><a class="dropdown-item dir-menu-govco" href="#">Trámites</a></li>
+                                                                </ul>
+                                                            </div>
+                                                            <!-- end col-3 -->
+                                                            <div class="colum-item-menu-govco">
+                                                                <span class="title">Nombre sección interna 3</span>
+                                                                <hr class="dropdown-divider">
+                                                                <ul class="list-unstyled">
+                                                                    <li><a class="dropdown-item dir-menu-govco" href="#">Trámites</a></li>
+                                                                    <li><a class="dropdown-item dir-menu-govco" href="#">Trámites</a></li>
+                                                                    <li><a class="dropdown-item dir-menu-govco" href="#">Trámites</a></li>
+                                                                    <li><a class="dropdown-item dir-menu-govco" href="#">Trámites</a></li>
+                                                                </ul>
+                                                            </div>
+                                                            <!-- end col-3 -->
+                                                            <div class="colum-item-menu-govco">
+                                                                <span class="title">Nombre sección interna 4</span>
+                                                                <hr class="dropdown-divider">
+                                                                <ul class="list-unstyled">
+                                                                    <li><a class="dropdown-item dir-menu-govco" href="#">Trámites</a></li>
+                                                                    <li><a class="dropdown-item dir-menu-govco" href="#">Trámites</a></li>
+                                                                    <li><a class="dropdown-item dir-menu-govco" href="#">Trámites</a></li>
+                                                                    <li><a class="dropdown-item dir-menu-govco" href="#">Trámites</a></li>
+                                                                </ul>
+                                                            </div>
+                                                            <!-- end col-3 -->
+                                                        </div>
+                                                        <!-- end row -->
+                                                    </div>
+                                                    <!-- dropdown-large-menu-govco.// -->
+                                                </li>
+                                                <li class="nav-item dropdown">
+                                                    <a class="nav-link" href="#" id="navbarDropdown4" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                        <span class="container-text-icon-menu-govco">
+                                              <span class="text-item-menu-govco">Ítem menú adicional</span>
+                                                        <span class="icon-caret-menu-govco"></span>
+                                                        </span>
+                                                    </a>
+                                                    <div class="dropdown-menu dropdown-menu-end dropdown-large-menu-govco col-3-menu-govco" role="menu">
+                                                        <div class="g-3 container-items-govco">
+                                                            <div class="colum-item-menu-govco">
+                                                                <span class="title">Nombre sección interna 1</span>
+                                                                <hr class="dropdown-divider">
+                                                                <ul class="list-unstyled">
+                                                                    <li><a class="dropdown-item dir-menu-govco" href="#">Trámites</a></li>
+                                                                    <li><a class="dropdown-item dir-menu-govco" href="#">Trámites</a></li>
+                                                                    <li><a class="dropdown-item dir-menu-govco" href="#">Trámites</a></li>
+                                                                    <li><a class="dropdown-item dir-menu-govco" href="#">Trámites</a></li>
+                                                                </ul>
+                                                            </div>
+                                                            <!-- end col-3 -->
+                                                            <div class="colum-item-menu-govco">
+                                                                <span class="title">Nombre sección interna 2</span>
+                                                                <hr class="dropdown-divider">
+                                                                <ul class="list-unstyled">
+                                                                    <li><a class="dropdown-item dir-menu-govco" href="#">Trámites</a></li>
+                                                                    <li><a class="dropdown-item dir-menu-govco" href="#">Trámites</a></li>
+                                                                    <li><a class="dropdown-item dir-menu-govco" href="#">Trámites</a></li>
+                                                                    <li><a class="dropdown-item dir-menu-govco" href="#">Trámites</a></li>
+                                                                </ul>
+                                                            </div>
+                                                            <!-- end col-3 -->
+                                                            <div class="colum-item-menu-govco">
+                                                                <span class="title">Nombre sección interna 3</span>
+                                                                <hr class="dropdown-divider">
+                                                                <ul class="list-unstyled">
+                                                                    <li><a class="dropdown-item dir-menu-govco" href="#">Trámites</a></li>
+                                                                    <li><a class="dropdown-item dir-menu-govco" href="#">Trámites</a></li>
+                                                                    <li><a class="dropdown-item dir-menu-govco" href="#">Trámites</a></li>
+                                                                    <li><a class="dropdown-item dir-menu-govco" href="#">Trámites</a></li>
+                                                                </ul>
+                                                            </div>
+                                                            <!-- end col-3 -->
+                                                        </div>
+                                                        <!-- end row -->
+                                                    </div>
+                                                    <!-- dropdown-large-menu-govco.// -->
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </nav>
+                            </div>
+                            <pre class="col-12">
+                                <code id="codemenu">
+                                    
+                                </code>
+                            </pre>
+                        </div>
+                    </div>
+                    <div class="item-accordion-govco">
+                        <h2 class="accordion-header" id="accordionPanels-modal">
+                            <button class="button-accordion-govco" type="button" data-bs-toggle="collapse" data-bs-target="#accordionPanels-collapsenav-breadcrumb" aria-expanded="true" aria-controls="accordionPanels-collapseOne" onclick="setCode('#codenav-breadcrumb','#nav-breadcrumb')">
+                          <span class="text-button-accordion-govco">Miga de Pan</span>
+                        </button>
+                        </h2>
+                        <div id="accordionPanels-collapsenav-breadcrumb" class="collapse accordion-collapse code-toolbar" data-bs-parent="#accordionExampleOne">
+
+                            <nav aria-label="Miga de pan predeterminada de dos niveles" id="nav-breadcrumb">
+                                <ul class="breadcrumb-govco">
+                                    <li class="breadcrumb-item-govco"><a href="#">Inicio</a></li>
+                                    <li class="breadcrumb-item-govco active" aria-current="page">Sección actual</li>
+                                </ul>
+                            </nav>
+                            <pre class="col-12">
+                                <code id="codenav-breadcrumb">
+                                    
+                                </code>
+                            </pre>
+                        </div>
+                    </div>
+                    <div class="item-accordion-govco">
+                        <h2 class="accordion-header" id="accordionPanels-modal">
+                            <button class="button-accordion-govco" type="button" data-bs-toggle="collapse" data-bs-target="#accordionPanels-collapseloginPersonaNatural" aria-expanded="true" aria-controls="accordionPanels-collapseOne" onclick="setCode('#codeloginPersonaNatural','#loginPersonaNatural')">
+                          <span class="text-button-accordion-govco">Login Persona Natural</span>
+                        </button>
+                        </h2>
+                        <div id="accordionPanels-collapseloginPersonaNatural" class="collapse accordion-collapse code-toolbar" data-bs-parent="#accordionExampleOne">
+
+                            <div class="card" id="loginPersonaNatural">
+                                <div class="card-body d-flex justify-content-center" style="background-color: #F6F8F9;">
+                                    <div class="inicio-sesion-govco" data-content="natural">
+                                        <h2>Inicio de sesión</h2>
+                                        <div class="container-radio-login-govco row mt-4">
+                                            <div class="radio-seleccion-govco radio-login-govco col-6 col-md-6 col-lg-6">
+                                                <input type="radio" id="radio1" name="radioButtonLogin" value="1" checked>
+                                                <label for="radio1">Persona natural</label>
+                                            </div>
+                                            <div class="radio-seleccion-govco radio-login-govco col-6 col-md-6 col-lg-6">
+                                                <input type="radio" id="radio2" name="radioButtonLogin" value="2">
+                                                <label for="radio2">Persona jurídica</label>
+                                            </div>
+                                        </div>
+                                        <div class="container-login-alerta-juridica-govco">
+                                            <div class="icon-informacion-login-govco"></div>
+                                            <p>Para realizar trámites, debes estar registrado con tu número de documento y ser representante legal de la empresa.</p>
+                                        </div>
+                                        <div class="login-label-govco mt-3">
+                                            <p><strong>Los campos marcados con <span aria-required="true">*</span> son obligatorios</strong></p>
+                                        </div>
+                                        <div class="container-login-opcion-govco" data-container-persona="natural">
+                                            <label for="lista-natural" class="label-desplegable-govco label-login-govco">Tipo de acceso<span aria-required="true">*</span></label>
+                                            <div class="desplegable-govco desplegable-login-govco mt-2" id="lista-desplegables-natural" data-type="basic" data-persona="natural">
+                                                <select id="lista-natural" aria-required="true">
+                                                <option value="0" disabled selected>Escoger</option>
+                                                <option value="1">Correo electrónico</option>
+                                                <option value="2">Cédula de ciudadanía</option>
+                                                <option value="3">Cédula de extranjería</option>
+                                                <option value="4">Tarjeta de identidad</option>
+                                                <option value="5">Permiso especial de permanencia</option>
+                                            </select>
+                                            </div>
+
+                                            <div class="none-login-govco mt-4" id="opcionacceso">
+                                                <div class="entradas-de-texto-govco">
+                                                    <label id="valor-login" for="textoaccion"></label>
+                                                    <div class="container-input-texto-govco">
+                                                        <input type="text" id="textoaccion" aria-invalid="false" placeholder="" typeData="" aria-required="true" />
+                                                        <div class="icon-entradas-de-texto-govco success-icon-entradas-de-texto-govco" aria-label="success" aria-hidden="true"></div>
+                                                        <div class="icon-entradas-de-texto-govco error-icon-entradas-de-texto-govco" aria-label="error" aria-hidden="true"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="container-login-opcion-govco container-login-opcion-juridica-govco" data-container-persona="juridica">
+                                            <label for="lista-juridica" class="label-desplegable-govco label-login-govco">Tipo de acceso<span aria-required="true">*</span></label>
+                                            <div class="desplegable-govco desplegable-login-govco mt-2" id="lista-desplegables-juridica" data-type="basic" data-persona="juridica">
+                                                <select id="lista-juridica" aria-required="true">
+                                                <option value="0" disabled selected>Escoger</option>
+                                                <option value="1">Cédula de ciudadanía</option>
+                                                <option value="2">Cédula de extranjería</option>
+                                            </select>
+                                            </div>
+                                            <div class=" login-label-juridica-govco mt-2 none-login-govco" id="opcionaccesojuridica">
+                                                <div class="entradas-de-texto-govco">
+                                                    <label id="valor-login-juridica" for="textoaccionjuridica"></label>
+                                                    <div class="container-input-texto-govco">
+                                                        <input type="text" id="textoaccionjuridica" aria-invalid="false" placeholder="" typeData="" aria-required="true" />
+                                                        <div class="icon-entradas-de-texto-govco success-icon-entradas-de-texto-govco" aria-label="success" aria-hidden="true"></div>
+                                                        <div class="icon-entradas-de-texto-govco error-icon-entradas-de-texto-govco" aria-label="error" aria-hidden="true"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="entradas-de-texto-govco">
+                                                    <label id="valor-login-juridica-nit" for="textonitjuridica">Número de NIT<span aria-required="true">*</span></label>
+                                                    <div class="nit-num-juridica-inicio-sesion-govco">
+                                                        <div class="container-input-texto-govco">
+                                                            <input type="text" id="textonitjuridica" placeholder="Ingresa tu número de NIT" aria-required="true" maxlength="9" typeData="nit" />
+                                                            <div class="icon-entradas-de-texto-govco success-icon-entradas-de-texto-govco" aria-label="success" aria-hidden="true"></div>
+                                                            <div class="icon-entradas-de-texto-govco error-icon-entradas-de-texto-govco" aria-label="error" aria-hidden="true"></div>
+                                                        </div>
+                                                        <p class="icon-minus-login-govco"></p>
+                                                        <div class="container-input-texto-govco">
+                                                            <input type="text" id="textonumjuridica" placeholder="Num" aria-invalid="false" aria-required="true" maxlength="1" typeData="nit1" />
+                                                            <div class="icon-entradas-de-texto-govco success-icon-entradas-de-texto-govco" aria-label="success" aria-hidden="true"></div>
+                                                            <div class="icon-entradas-de-texto-govco error-icon-entradas-de-texto-govco" aria-label="error" aria-hidden="true"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <button type="button" class="btn-govco fill-btn-govco" name="continuar" style="width: 165px; height: 42px;" disabled>Continuar</button>
+                                        </div>
+                                        <div class="container-options-login-govco">
+                                            <div class="mt-3">
+                                                <a href="">Olvidé mi contraseña</a>
+                                            </div>
+                                            <p class="mt-3">¿No tienes cuenta? &nbsp;
+                                                <a class="mt-3" href="">Regístrate aquí</a></p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <pre class="col-12">
+                                <code id="codeloginPersonaNatural">
+                                    
+                                </code>
+                            </pre>
+                        </div>
+                    </div>
+                    <div class="item-accordion-govco">
+                        <h2 class="accordion-header" id="accordionPanels-modal">
+                            <button class="button-accordion-govco" type="button" data-bs-toggle="collapse" data-bs-target="#accordionPanels-collapsepaginador" aria-expanded="true" aria-controls="accordionPanels-collapseOne" onclick="setCode('#codepaginador','#paginador')">
+                          <span class="text-button-accordion-govco">Paginador</span>
+                        </button>
+                        </h2>
+                        <div id="accordionPanels-collapsepaginador" class="collapse accordion-collapse code-toolbar" data-bs-parent="#accordionExampleOne">
+
+                            <div class="pagination-container-govco" id="paginador">
+                                <nav class="nav-pagination-govco" aria-label="paginador de ejemplo">
+                                    <div class="pagination-govco" id="paginationExample" total="20" initialpage="5">
+                                        <ul id="lista-paginador"></ul>
+                                    </div>
+                                </nav>
+                                <script>
+                                    const divData = document.getElementById("paginationExample");
+                                    const totalPages = divData.getAttribute("total");
+                                    let initialActive = Number(divData.getAttribute("initialpage"));
+                                    document.getElementById("lista-paginador").innerHTML = dibujarElementos(totalPages, initialActive);
+
+                                    function dibujarElementos(pages, page) {
+                                        let liTag = "";
+                                        let active;
+                                        let beforePages = page - 1;
+                                        let afterPages = page + 1;
+
+                                        if (page > 1) {
+                                            liTag += `<li class="page-item-govco prev-page-govco no"><a href="javascript:void(0)" onclick="dibujarElementos(${pages}, (${page}-1))"><span class="prev-page-icon-govco"></span><span class="prev-page-text-govco">Anterior</span></a></li>`;
+                                        } else if (page == 1) {
+                                            liTag += `<li class="page-item-govco prev-page-govco disabled-govco"><a href="javascript:void(0)"><span class="prev-page-icon-govco"></span><span class="prev-page-text-govco">Anterior</span></a></li>`;
+                                        }
+
+                                        if (pages < 6) {
+                                            for (let p = 1; p <= pages; p++) {
+                                                active = page == p ? "active-govco" : "no";
+                                                liTag += `<li class="page-item-govco number-govco ${active}"><a href="javascript:void(0)" onclick="dibujarElementos(${pages}, ${p})">${p}</a></li>`;
+                                            }
+                                        } else {
+                                            if (page > 2) {
+                                                liTag += `<li class="page-item-govco number-govco"><a href="javascript:void(0)" onclick="dibujarElementos(${pages}, 1)">1</a></li>`;
+                                                if (page > 3) {
+                                                    liTag += `<li class="page-item-govco dots-govco"><a>...</a></li>`;
+                                                }
+                                            }
+
+                                            if (page === 1) {
+                                                afterPages += 2;
+                                            } else if (page === 2) {
+                                                afterPages += 1;
+                                            }
+
+                                            if (page === pages) {
+                                                beforePages -= 2;
+                                            } else if (page === pages - 1) {
+                                                beforePages -= 1;
+                                            }
+
+                                            for (let p = beforePages; p <= afterPages; p++) {
+                                                if (p === 0) {
+                                                    p += 1;
+                                                }
+                                                if (p > pages) {
+                                                    continue;
+                                                }
+                                                active = page == p ? "active-govco" : "no";
+                                                liTag += `<li class="page-item-govco number-govco ${active}"><a href="javascript:void(0)" onclick="dibujarElementos(${pages}, ${p})">${p}</a></li>`;
+                                            }
+
+                                            if (page < pages - 1) {
+                                                if (page < pages - 2) {
+                                                    liTag += `<li class="page-item-govco dots-govco"><a>...</a></li>`;
+                                                }
+                                                liTag += `<li class="page-item-govco number-govco no"><a href="javascript:void(0)" onclick="dibujarElementos(${pages}, ${pages})">${pages}</a></li>`;
+                                            }
+                                        }
+
+                                        if (page < pages) {
+                                            liTag += `<li class="page-item-govco next-page-govco"><a href="javascript:void(0)" onclick="dibujarElementos(${pages}, (${page}+1))"><span class="next-page-icon-govco"></span><span class="next-page-text-govco">Siguiente</span></a></li>`;
+                                        } else if (page == pages) {
+                                            liTag += `<li class="page-item-govco next-page-govco disabled-govco"><a href="javascript:void(0)"><span class="next-page-icon-govco"></span><span class="next-page-text-govco">Siguiente</span></a></li>`;
+                                        }
+                                        document.getElementById("lista-paginador").innerHTML = liTag;
+                                        return liTag;
+                                    }
+                                </script>
+                            </div>
+                            <pre class="col-12">
+                                <code id="codepaginador">
+                                    
+                                </code>
+                            </pre>
+                        </div>
+                    </div>
+                    <div class="item-accordion-govco">
+                        <h2 class="accordion-header" id="accordionPanels-modal">
+                            <button class="button-accordion-govco" type="button" data-bs-toggle="collapse" data-bs-target="#accordionPanels-collapsepestanas" aria-expanded="true" aria-controls="accordionPanels-collapseOne" onclick="setCode('#codepestanas','#pestanas')">
+                          <span class="text-button-accordion-govco">Pestañas</span>
+                        </button>
+                        </h2>
+                        <div id="accordionPanels-collapsepestanas" class="collapse accordion-collapse code-toolbar" data-bs-parent="#accordionExampleOne">
+
+                            <div class="row" id="pestanas">
+                                <div class="container-navbar-pestana-govco blue-pestana-govco">
+                                    <nav class=" navbar-expand-lg navbar-pestana-govco">
+                                        <div class="navbar-collapse">
+                                            <ul class="navbar-nav">
+                                                <li id="pestania1" class="nav-item">
+                                                    <a id="pestuno" class="nav-link" href="javascript:void(0)" onclick="pestanauno()">
+                                                        <p id="letrapestuno">
+                                                            Pestaña
+                                                        </p>
+                                                    </a>
+                                                    <hr id="hruno" class="clase-uno" style="color:transparent;">
+                                                </li>
+                                                <li id="pestania2" class="nav-item">
+                                                    <a id="pestdos" class="nav-link" href="javascript:void(0)" onclick="pestanados()">
+                                                        <p id="letrapestdos">
+                                                            Pestaña
+                                                        </p>
+                                                    </a>
+                                                    <hr id="hrdos" class="clase-uno" style="color:transparent;">
+                                                </li>
+                                                <li id="pestania3" class="nav-item">
+                                                    <a id="pesttres" class="nav-link" href="javascript:void(0)" onclick="pestanatres()">
+                                                        <p id="letrapesttres">
+                                                            Pestaña
+                                                        </p>
+                                                    </a>
+                                                    <hr id="hrtres" class="clase-uno" style="color:transparent;">
+                                                </li>
+                                                <li id="pestania4" class="nav-item">
+                                                    <a id="pestcuatro" class="nav-link" href="javascript:void(0)" onclick="pestanacuatro()">
+                                                        <p id="letrapestcuatro">
+                                                            Pestaña
+                                                        </p>
+                                                    </a>
+                                                    <hr id="hrcuatro" class="clase-uno" style="color:transparent;">
+                                                </li>
+                                                <li id="pestania5" class="nav-item">
+                                                    <a id="pestcinco" class="nav-link" href="javascript:void(0)" onclick="pestanacinco()">
+                                                        <p id="letrapestcinco">
+                                                            Pestaña
+                                                        </p>
+                                                    </a>
+                                                    <hr id="hrcinco" class="clase-uno" style="color:transparent;">
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </nav>
+                                </div>
+                                <script>
+                                    function pestanauno() {
+
+                                        var pestana1 = document.getElementById("hruno");
+                                        var pestana2 = document.getElementById("hrdos");
+                                        var pestana3 = document.getElementById("hrtres");
+                                        var pestana4 = document.getElementById("hrcuatro");
+                                        var pestana5 = document.getElementById("hrcinco");
+
+                                        if (pestana1.classList.contains("clase-uno")) {
+                                            pestana1.classList.remove("clase-uno");
+                                            pestana1.classList.toggle("clase-dos");
+                                            document.getElementById("letrapestuno").style.fontFamily = "Montserrat-Bold";
+                                        }
+                                        if (pestana2.classList.contains("clase-dos")) {
+                                            pestana2.classList.remove("clase-dos");
+                                            pestana2.classList.toggle("clase-uno");
+                                            document.getElementById("letrapestdos").style.fontFamily = "Montserrat-Medium";
+                                        }
+                                        if (pestana3.classList.contains("clase-dos")) {
+                                            pestana3.classList.remove("clase-dos");
+                                            pestana2.classList.toggle("clase-uno");
+                                            document.getElementById("letrapesttres").style.fontFamily = "Montserrat-Medium";
+                                        }
+                                        if (pestana4.classList.contains("clase-dos")) {
+                                            pestana4.classList.remove("clase-dos");
+                                            pestana4.classList.toggle("clase-uno");
+                                            document.getElementById("letrapestcuatro").style.fontFamily = "Montserrat-Medium";
+                                        }
+                                        if (pestana5.classList.contains("clase-dos")) {
+                                            pestana5.classList.remove("clase-dos");
+                                            pestana5.classList.toggle("clase-uno");
+                                            document.getElementById("letrapestcinco").style.fontFamily = "Montserrat-Medium";
+                                        }
+                                    }
+
+                                    function pestanados() {
+                                        var pestana1 = document.getElementById("hruno");
+                                        var pestana2 = document.getElementById("hrdos");
+                                        var pestana3 = document.getElementById("hrtres");
+                                        var pestana4 = document.getElementById("hrcuatro");
+                                        var pestana5 = document.getElementById("hrcinco");
+
+                                        if (pestana1.classList.contains("clase-dos")) {
+                                            pestana1.classList.remove("clase-dos");
+                                            pestana1.classList.toggle("clase-uno");
+                                            document.getElementById("letrapestuno").style.fontFamily = "Montserrat-Medium";
+                                        }
+                                        if (pestana2.classList.contains("clase-uno")) {
+                                            pestana2.classList.remove("clase-uno");
+                                            pestana2.classList.toggle("clase-dos");
+                                            document.getElementById("letrapestdos").style.fontFamily = "Montserrat-Bold";
+                                        }
+                                        if (pestana3.classList.contains("clase-dos")) {
+                                            pestana3.classList.remove("clase-dos");
+                                            pestana3.classList.toggle("clase-uno");
+                                            document.getElementById("letrapesttres").style.fontFamily = "Montserrat-Medium";
+                                        }
+                                        if (pestana4.classList.contains("clase-dos")) {
+                                            pestana4.classList.remove("clase-dos");
+                                            pestana4.classList.toggle("clase-uno");
+                                            document.getElementById("letrapestcuatro").style.fontFamily = "Montserrat-Medium";
+                                        }
+                                        if (pestana5.classList.contains("clase-dos")) {
+                                            pestana5.classList.remove("clase-dos");
+                                            pestana5.classList.toggle("clase-uno");
+                                            document.getElementById("letrapestcinco").style.fontFamily = "Montserrat-Medium";
+                                        }
+                                    }
+
+                                    function pestanatres() {
+                                        var pestana1 = document.getElementById("hruno");
+                                        var pestana2 = document.getElementById("hrdos");
+                                        var pestana3 = document.getElementById("hrtres");
+                                        var pestana4 = document.getElementById("hrcuatro");
+                                        var pestana5 = document.getElementById("hrcinco");
+
+                                        if (pestana1.classList.contains("clase-dos")) {
+                                            pestana1.classList.remove("clase-dos");
+                                            pestana1.classList.toggle("clase-uno");
+                                            document.getElementById("letrapestuno").style.fontFamily = "Montserrat-Medium";
+                                        }
+                                        if (pestana2.classList.contains("clase-dos")) {
+                                            pestana2.classList.remove("clase-dos");
+                                            pestana2.classList.toggle("clase-uno");
+                                            document.getElementById("letrapestdos").style.fontFamily = "Montserrat-Medium";
+                                        }
+                                        if (pestana3.classList.contains("clase-uno")) {
+                                            pestana3.classList.remove("clase-uno");
+                                            pestana3.classList.toggle("clase-dos");
+                                            document.getElementById("letrapesttres").style.fontFamily = "Montserrat-Bold";
+                                        }
+                                        if (pestana4.classList.contains("clase-dos")) {
+                                            pestana4.classList.remove("clase-dos");
+                                            pestana4.classList.toggle("clase-uno");
+                                            document.getElementById("letrapestcuatro").style.fontFamily = "Montserrat-Medium";
+                                        }
+                                        if (pestana5.classList.contains("clase-dos")) {
+                                            pestana5.classList.remove("clase-dos");
+                                            pestana5.classList.toggle("clase-uno");
+                                            document.getElementById("letrapestcinco").style.fontFamily = "Montserrat-Medium";
+                                        }
+                                    }
+
+                                    function pestanacuatro() {
+                                        var pestana1 = document.getElementById("hruno");
+                                        var pestana2 = document.getElementById("hrdos");
+                                        var pestana3 = document.getElementById("hrtres");
+                                        var pestana4 = document.getElementById("hrcuatro");
+                                        var pestana5 = document.getElementById("hrcinco");
+
+                                        if (pestana1.classList.contains("clase-dos")) {
+                                            pestana1.classList.remove("clase-dos");
+                                            pestana1.classList.toggle("clase-uno");
+                                            document.getElementById("letrapestuno").style.fontFamily = "Montserrat-Medium";
+                                        }
+                                        if (pestana2.classList.contains("clase-dos")) {
+                                            pestana2.classList.remove("clase-dos");
+                                            pestana2.classList.toggle("clase-uno");
+                                            document.getElementById("letrapestdos").style.fontFamily = "Montserrat-Medium";
+                                        }
+                                        if (pestana3.classList.contains("clase-dos")) {
+                                            pestana3.classList.remove("clase-dos");
+                                            pestana3.classList.toggle("clase-uno");
+                                            document.getElementById("letrapesttres").style.fontFamily = "Montserrat-Medium";
+                                        }
+                                        if (pestana4.classList.contains("clase-uno")) {
+                                            pestana4.classList.remove("clase-uno");
+                                            pestana4.classList.toggle("clase-dos");
+                                            document.getElementById("letrapestcuatro").style.fontFamily = "Montserrat-Bold";
+                                        }
+                                        if (pestana5.classList.contains("clase-dos")) {
+                                            pestana5.classList.remove("clase-dos");
+                                            pestana5.classList.toggle("clase-uno");
+                                            document.getElementById("letrapestcinco").style.fontFamily = "Montserrat-Medium";
+                                        }
+                                    }
+
+                                    function pestanacinco() {
+                                        var pestana1 = document.getElementById("hruno");
+                                        var pestana2 = document.getElementById("hrdos");
+                                        var pestana3 = document.getElementById("hrtres");
+                                        var pestana4 = document.getElementById("hrcuatro");
+                                        var pestana5 = document.getElementById("hrcinco");
+
+                                        if (pestana1.classList.contains("clase-dos")) {
+                                            pestana1.classList.remove("clase-dos");
+                                            pestana1.classList.toggle("clase-uno");
+                                            document.getElementById("letrapestuno").style.fontFamily = "Montserrat-Medium";
+                                        }
+                                        if (pestana2.classList.contains("clase-dos")) {
+                                            pestana2.classList.remove("clase-dos");
+                                            pestana2.classList.toggle("clase-uno");
+                                            document.getElementById("letrapestdos").style.fontFamily = "Montserrat-Medium";
+                                        }
+                                        if (pestana3.classList.contains("clase-dos")) {
+                                            pestana3.classList.remove("clase-dos");
+                                            pestana3.classList.toggle("clase-uno");
+                                            document.getElementById("letrapesttres").style.fontFamily = "Montserrat-Medium";
+                                        }
+                                        if (pestana4.classList.contains("clase-dos")) {
+                                            pestana4.classList.remove("clase-dos");
+                                            pestana4.classList.toggle("clase-uno");
+                                            document.getElementById("letrapestcuatro").style.fontFamily = "Montserrat-Medium";
+                                        }
+                                        if (pestana5.classList.contains("clase-uno")) {
+                                            pestana5.classList.remove("clase-uno");
+                                            pestana5.classList.toggle("clase-dos");
+                                            document.getElementById("letrapestcinco").style.fontFamily = "Montserrat-Bold";
+                                        }
+                                    }
+                                </script>
+                            </div>
+                            <pre class="col-12 py-5">
+                                <code id="codepestanas">
+                                    
+                                </code>
+                            </pre>
+                        </div>
+                    </div>
+                    <div class="item-accordion-govco">
+                        <h2 class="accordion-header" id="accordionPanels-modal">
+                            <button class="button-accordion-govco" type="button" data-bs-toggle="collapse" data-bs-target="#accordionPanels-collapsetable" aria-expanded="true" aria-controls="accordionPanels-collapseOne" onclick="setCode('#codetable','#table')">
+                          <span class="text-button-accordion-govco">Tabla</span>
+                        </button>
+                        </h2>
+                        <div id="accordionPanels-collapsetable" class="collapse accordion-collapse" data-bs-parent="#accordionExampleOne">
+
+                            <div class="table-responsive" id="table">
+                                <h4 class="modal-title-tables" id="tableDescResponsive">Tablas con diseño responsivo (responsive)</h4>
+                                <table class="table-externa mx-auto" aria-describedby="tableDescNesting">
+                                    <thead class="encabezado-tabla-externa">
+                                        <tr>
+                                            <th scope="col">
+                                                <input type="checkbox" name="" id="check-anidado">
+                                                <label class="checkout-tabla" for="check-anidado">
+                                            Seleccionar filas
+                                          </label>
+                                            </th>
+                                            <th scope="col">
+                                                Nombre
+                                            </th>
+                                            <th scope="col">
+                                                ID
+                                            </th>
+                                            <th scope="col">
+                                                Descripción
+                                            </th>
+                                        </tr>
+                                    </thead>
+                                    <tbody class="contenido-tablas">
+                                        <tr>
+                                            <td>
+                                                <input type="checkbox" name="" id="anid-1">
+                                                <label class="checkout-tabla" for="anid-1">
+                                            Seleccionar fila 1
+                                          </label>
+                                            </td>
+                                            <td>
+                                                Módulo 1
+                                            </td>
+                                            <td>
+                                                4598
+                                            </td>
+                                            <td>
+                                                Descripción del módulo y su función Descripción del módulo y su función Descripción del módulo y su función
+                                            </td>
+                                        </tr>
+                                        <tr class="contenedor-tabla-interna">
+                                            <td colspan="5">
+                                                <table class="table-interna">
+                                                    <caption class="caption-top">
+                                                        <span class="caption-1">Permisos incluidos</span>
+                                                        <span class="caption-2">Seleccione que permisos desea otorgar en este módulo</span>
+                                                    </caption>
+                                                    <thead class="encabezado-tabla-interna">
+                                                        <tr>
+                                                            <th scope="col">
+                                                                <input type="checkbox" name="" id="check-basico-interno">
+                                                                <label class="checkout-tabla" for="check-basico-interno">
+                                                    Seleccionar filas
+                                                  </label>
+                                                            </th>
+                                                            <th scope="col">
+                                                                Nombre del permiso
+                                                            </th>
+                                                            <th scope="col">
+                                                                ID
+                                                            </th>
+                                                            <th scope="col">
+                                                                Descripción
+                                                            </th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody class="contenido-tablas-interno">
+                                                        <tr>
+                                                            <td>
+                                                                <input type="checkbox" name="" id="int-1">
+                                                                <label class="checkout-tabla" for="int-1">
+                                                    Seleccionar fila 1
+                                                  </label>
+                                                            </td>
+                                                            <td>
+                                                                Permiso 1
+                                                            </td>
+                                                            <td>
+                                                                0123
+                                                            </td>
+                                                            <td>
+                                                                Descripción
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                <input type="checkbox" name="" id="int-2">
+                                                                <label class="checkout-tabla" for="int-2">
+                                                    Seleccionar fila 2
+                                                  </label>
+                                                            </td>
+                                                            <td>
+                                                                Permiso 1
+                                                            </td>
+                                                            <td>
+                                                                0123
+                                                            </td>
+                                                            <td>
+                                                                Descripción
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <input type="checkbox" name="" id="anid-2">
+                                                <label class="checkout-tabla" for="anid-2">
+                                            Seleccionar fila 2
+                                          </label>
+                                            </td>
+                                            <td>
+                                                Módulo 1
+                                            </td>
+                                            <td>
+                                                4598
+                                            </td>
+                                            <td>
+                                                Descripción del módulo y su función Descripción del módulo y su función Descripción del módulo y su función
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <pre class="col-12">
+                                <code id="codetable">
+                                    
+                                </code>
+                            </pre>
+                        </div>
+                    </div>
+                    <div class="item-accordion-govco">
+                        <h2 class="accordion-header" id="accordionPanels-modal">
+                            <button class="button-accordion-govco" type="button" data-bs-toggle="collapse" data-bs-target="#accordionPanels-collapsetarjetasHorizontal" aria-expanded="true" aria-controls="accordionPanels-collapseOne" onclick="setCode('#codetarjetasHorizontal','#tarjetasHorizontal')">
+                          <span class="text-button-accordion-govco">Tarjetas Horizontales</span>
+                        </button>
+                        </h2>
+                        <div id="accordionPanels-collapsetarjetasHorizontal" class="collapse accordion-collapse" data-bs-parent="#accordionExampleOne">
+
+                            <div id="tarjetasHorizontal">
+                                <!-- Tarjeta horizontal izquierda -->
+                                <a class="tarjeta-govco horizontal-tarjeta-govco" href="" title="descripción donde redirige el enlace">
+                                    <div class="container-img-tarjeta-govco">
+                                        <img class="image-tarjeta-govco" src="http://www.brandemia.org/wp-content/uploads/2012/09/Colombia_Biodiversidad.jpg" alt="descripción de la imagen">
+                                    </div>
+                                    <div class="body-tarjeta-govco">
+                                        <h5>Conoce Colombia</h5>
+                                        <p>Nuestro país es hermoso, y queremos que conozcas más sobre él.</p>
+                                    </div>
+                                </a>
+                                <br/>
+                                <!-- Tarjeta horizontal derecha -->
+                                <a class="tarjeta-govco horizontal-tarjeta-govco reverse-tarjeta-govco" href="" title="descripción donde redirige el enlace">
+                                    <div class="container-img-tarjeta-govco">
+                                        <img class="image-tarjeta-govco" src="http://www.brandemia.org/wp-content/uploads/2012/09/Colombia_Biodiversidad.jpg" alt="descripción de la imagen">
+                                    </div>
+                                    <div class="body-tarjeta-govco">
+                                        <h5>Conoce Colombia</h5>
+                                        <p>Nuestro país es hermoso, y queremos que conozcas más sobre él.</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <pre class="col-12">
+                                <code id="codetarjetasHorizontal">
+                                    
+                                </code>
+                            </pre>
+                        </div>
+                    </div>
+                    <div class="item-accordion-govco">
+                        <h2 class="accordion-header" id="accordionPanels-modal">
+                            <button class="button-accordion-govco" type="button" data-bs-toggle="collapse" data-bs-target="#accordionPanels-collapsetarjetaVertical" aria-expanded="true" aria-controls="accordionPanels-collapseOne" onclick="setCode('#codetarjetaVertical','#tarjetaVertical')">
+                          <span class="text-button-accordion-govco">Tarjeta Vertical</span>
+                        </button>
+                        </h2>
+                        <div id="accordionPanels-collapsetarjetaVertical" class="collapse accordion-collapse" data-bs-parent="#accordionExampleOne">
+
+                            <a class="tarjeta-govco vertical-tarjeta-govco" href="" title="descripción donde redirige el enlace" id="tarjetaVertical">
+                                <div class="container-img-tarjeta-govco">
+                                    <img class="image-tarjeta-govco" src="https://govco-prod-webutils.s3.amazonaws.com/uploads/2022-04-22/82bf860a-0581-4689-97cc-e8b996d5ff07-pexels-christina-morillo-1181681.jpg" alt="descripción de la imagen">
+                                </div>
+                                <div class="body-tarjeta-govco">
+                                    <span>28 FEBRERO 2019</span>
+                                    <h5>Dale impulso a tu empresa de Economía Naranja</h5>
+                                    <p>Aprovecha la exención de renta por 7 años a las empresas dedicadas a la tecnología, la cultura y la creatividad.</p>
+                                </div>
+                            </a>
+                            <pre class="col-12">
+                                <code id="codetarjetaVertical">
+                                    
+                                </code>
+                            </pre>
+                        </div>
+                    </div>
+                    <div class="item-accordion-govco">
+                        <h2 class="accordion-header" id="accordionPanels-modal">
+                            <button class="button-accordion-govco" type="button" data-bs-toggle="collapse" data-bs-target="#accordionPanels-collapsetarjetasIconoVertical" aria-expanded="true" aria-controls="accordionPanels-collapseOne" onclick="setCode('#codetarjetasIconoVertical','#tarjetasIconoVertical')">
+                          <span class="text-button-accordion-govco">Tarjetas Icono Vertical</span>
+                        </button>
+                        </h2>
+                        <div id="accordionPanels-collapsetarjetasIconoVertical" class="collapse accordion-collapse" data-bs-parent="#accordionExampleOne">
+
+                            <div id="tarjetasIconoVertical">
+                                <!-- Tarjeta ícono + texto Variante vertical -->
+                                <a class="icono-tarjeta-govco vertical-tarjeta-govco" href="" title="descripción donde redirige el enlace">
+                                    <div class="container-icono-tarjeta-govco">
+                                        <img src="https://www.gov.co/uploads/9d4af2e2-dbf1-4113-a463-0decc05c1b4b.svg" alt="descripción de la imagen">
+                                    </div>
+                                    <div class="body-tarjeta-govco">
+                                        <div class="title-body-tarjeta-govco">
+                                            <h5>Título</h5>
+                                        </div>
+                                        <p>Descripción de 95 caracteres (espacios incluidos) del contenido de la categoría seleccionada.</p>
+                                    </div>
+                                </a>
+
+                                <!-- Tarjeta ícono + texto Variante vertical - estado deshabilitado -->
+                                <div class="icono-tarjeta-govco vertical-tarjeta-govco">
+                                    <div class="container-icono-tarjeta-govco">
+                                        <img src="https://www.gov.co/uploads/9d4af2e2-dbf1-4113-a463-0decc05c1b4b.svg" alt="descripción de la imagen">
+                                    </div>
+                                    <div class="body-tarjeta-govco">
+                                        <div class="title-body-tarjeta-govco">
+                                            <h5>Título</h5>
+                                        </div>
+                                        <p>Descripción de 95 caracteres (espacios incluidos) del contenido de la categoría seleccionada.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <pre class="col-12">
+                                <code id="codetarjetasIconoVertical">
+                                    
+                                </code>
+                            </pre>
+                        </div>
+                    </div>
+                    <div class="item-accordion-govco">
+                        <h2 class="accordion-header" id="accordionPanels-modal">
+                            <button class="button-accordion-govco" type="button" data-bs-toggle="collapse" data-bs-target="#accordionPanels-collapsetarjetasIconoHorizontal" aria-expanded="true" aria-controls="accordionPanels-collapseOne" onclick="setCode('#codetarjetasIconoHorizontal','#tarjetasIconoHorizontal')">
+                          <span class="text-button-accordion-govco">Tarjetas Icono Horizontal</span>
+                        </button>
+                        </h2>
+                        <div id="accordionPanels-collapsetarjetasIconoHorizontal" class="collapse accordion-collapse" data-bs-parent="#accordionExampleOne">
+
+                            <div id="tarjetasIconoHorizontal">
+                                <!-- Tarjeta ícono + texto Variante vertical -->
+                                <a class="icono-tarjeta-govco horizontal-tarjeta-govco" href="" title="descripción donde redirige el enlace">
+                                    <div class="container-icono-tarjeta-govco">
+                                        <img src="https://www.gov.co/uploads/9d4af2e2-dbf1-4113-a463-0decc05c1b4b.svg" alt="descripción de la imagen">
+                                    </div>
+                                    <div class="body-tarjeta-govco">
+                                        <h5>Actualización del Registro Único Tributario (RUT)</h5>
+                                    </div>
+                                </a>
+
+                                <!-- Tarjeta ícono + texto Variante vertical - estado deshabilitado -->
+                                <div class="icono-tarjeta-govco horizontal-tarjeta-govco">
+                                    <div class="container-icono-tarjeta-govco">
+                                        <img src="https://www.gov.co/uploads/9d4af2e2-dbf1-4113-a463-0decc05c1b4b.svg" alt="descripción de la imagen">
+                                    </div>
+                                    <div class="body-tarjeta-govco">
+                                        <div class="title-body-tarjeta-govco">
+                                            <h5>Actualización del Registro Único Tributario (RUT)</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <pre class="col-12">
+                                <code id="codetarjetasIconoHorizontal">
+                                    
+                                </code>
+                            </pre>
+                        </div>
+                    </div>
+                    <div class="item-accordion-govco">
+                        <h2 class="accordion-header" id="accordionPanels-modal">
+                            <button class="button-accordion-govco" type="button" data-bs-toggle="collapse" data-bs-target="#accordionPanels-collapsetarjetasModulo" aria-expanded="true" aria-controls="accordionPanels-collapseOne" onclick="setCode('#codetarjetasModulo','#tarjetasModulo')">
+                          <span class="text-button-accordion-govco">Tarjetas Modulo</span>
+                        </button>
+                        </h2>
+                        <div id="accordionPanels-collapsetarjetasModulo" class="collapse accordion-collapse" data-bs-parent="#accordionExampleOne">
+
+                            <div id="tarjetasModulo">
+                                <!-- Tarjeta tipo módulo -->
+                                <a class="module-tarjeta-govco" href="" title="descripción donde redirige el enlace">
+                                    <div class="header-tarjeta-govco">
+                                        <h5>Radicar trámite</h5>
+                                    </div>
+                                    <hr>
+                                    <div class="body-tarjeta-govco">
+                                        <p>Inicie el trámite de legalización de los documentos de educación superior.</p>
+                                    </div>
+                                </a>
+
+                                <!-- Tarjeta tipo módulo - estado deshabilitado -->
+                                <div class="module-tarjeta-govco">
+                                    <div class="header-tarjeta-govco">
+                                        <h5>Radicar trámite</h5>
+                                    </div>
+                                    <hr>
+                                    <div class="body-tarjeta-govco">
+                                        <p>Inicie el trámite de legalización de los documentos de educación superior.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <pre class="col-12">
+                                <code id="codetarjetasModulo">
+                                    
+                                </code>
+                            </pre>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+    <script>
+        function setCode(inner, html) {
+            document.querySelector(inner).innerText = document.querySelector(html).outerHTML
+        }
+
+        function activeItemCandy(itemSelected) {
+            const itemsCollection = document.querySelectorAll('.dropdown-item-govco');
+            itemsCollection.forEach((element) => {
+                element.classList.remove('active-select');
+            });
+            document.getElementById(itemSelected).classList.add('active-select');
+        }
+    </script>
+</body>
+
+</html>
